@@ -1,0 +1,15 @@
+import * as React from 'react';
+import * as ReactShallowRenderer from 'react-test-renderer/shallow';
+
+import {{{componentName}}} from '../{{{componentName}}}';
+
+describe('The {{{componentName}}} {{{componentType}}}', () => {
+    it('Should render no matter what', () => {
+         const renderer = new ReactShallowRenderer();
+         const result = renderer.render(
+            <{{{componentName}}} />
+        );
+        
+         expect(result).toBeTruthy();
+    });
+});

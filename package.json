@@ -1,0 +1,45 @@
+{
+  "name": "storybook-universal",
+  "version": "0.1.0",
+  "private": false,
+  "devDependencies": {
+    "@storybook/react": "^3.4.8",
+    "@storybook/react-native": "^3.4.8",
+    "@types/jest": "^23.1.5",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-native": "^0.56.0",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "debug": "^3.1.0",
+    "inquirer": "^6.0.0",
+    "jest-expo": "^27.0.0",
+    "mkdirp": "^0.5.1",
+    "mustache": "^2.3.0",
+    "react-art": "^^16.4.1",
+    "react-dom": "^16.3.1",
+    "react-native-scripts": "^1.14.0",
+    "react-native-web": "^0.8.8",
+    "react-test-renderer": "^16.3.1",
+    "typescript": "^2.9.2",
+    "expo": "^27.0.1",
+    "react": "^16.3.1",
+    "react-native": "^0.55.2",
+    "styled-components": "^3.3.3"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "native": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest",
+    "scaffold": "DEBUG=* node ./scripts/scaffold",
+    "compile": "./node_modules/.bin/tsc",
+    "watch": "./node_modules/.bin/tsc --watch",
+    "web": "start-storybook -p 6006 -c ./storybook/web"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  }
+}

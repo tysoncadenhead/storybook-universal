@@ -1,0 +1,12 @@
+
+import * as React from 'react';
+
+import {{{componentName}}} from '../{{{componentName}}}';
+import { storiesOf } from '@storybook/react-native';
+
+declare let module : () => void;
+
+storiesOf('{{{componentType}}}s/{{{componentName}}}', module)
+    .add('default', () => (
+        <{{{componentName}}} />
+    ));
